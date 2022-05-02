@@ -25,6 +25,7 @@
           <option>Кроссовер</option>
         </select>
       </div>
+
       <div>
         <label for="">Марка авто</label>
         <select name="brand" id="list" required>
@@ -37,6 +38,7 @@
           <option>Honda</option>
         </select>
       </div>
+
       <div>
         <label for="">Страна производитель</label>
         <select name="country" id="list" required>
@@ -50,19 +52,21 @@
           <option>Корея</option>
         </select>
       </div>
+
       <div>
         <label for="">Цена</label>
-        <input type="number" name="min price" placeholder="Цена от" min="1">
-        <input id="" type="number" name="max price" placeholder="Цена до" max="50000">
+        <input type="number" name="min price" placeholder="Цена от" min="1" max="50000">
+        <input id="" type="number" name="max price" placeholder="Цена до" min="1" max="50000">
       </div>
       <div>
         <label for="year">Год випуска</label>
         <input id="year" type="number" name="min year" placeholder="Год от" min="1998" max="2022">
         <input id="" type="number" name="max year" placeholder="Год до" min="1998" max="2022">
       </div>
+
       <div>
         <label for="">Состояние</label>
-        <select name="condition" id="list" required multiple>
+        <select name="condition" id="list" required>
           <option selected disabled>Выберите состояние</option>
           <option>Битая</option>
           <option>Гаражное хранение</option>
@@ -72,14 +76,59 @@
           <option>Нерастаможенная</option>
         </select>
       </div>
+
+      <div>
+        <label for="">Тип топлива</label>
+        <select name="fuel" id="list" required>
+          <option selected disabled>Выберите тип</option>
+          <option>Дизель</option>
+          <option>Бензин</option>
+          <option>Газ</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Трансмиссия</label>
+        <select name="transm" id="list" required>
+          <option selected disabled>Выберите тип</option>
+          <option>Робот</option>
+          <option>Механика</option>
+          <option>Автомат</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Цвет</label>
+        <select name="color" id="list" required multiple>
+          <option selected disabled>Выберите цвет</option>
+          <option>Белый</option>
+          <option>Черный</option>
+          <option>Синий</option>
+          <option>Металлик</option>
+          <option>Красный</option>
+          <option>Зеленый</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Комфорт</label>
+        <select name="comfort" id="list" required multiple>
+          <option selected>Выберите опции</option>
+          <option>Климатконтроль</option>
+          <option>Кондиционер</option>
+          <option>Подогрев руля</option>
+          <option>Круиз</option>
+          <option>Кожа</option>
+          <option>Понорамная крыша</option>
+        </select>
+      </div>
+
     </fieldset>
-
-
-
 
     <fieldset>
       <legend>Поиск по параметрам</legend>
       <button type="submit">Подобрать</button>
+      <button type="reset">Сбросить</button>
     </fieldset>
 
   </form>
