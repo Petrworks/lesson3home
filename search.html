@@ -50,8 +50,28 @@
           <option>Корея</option>
         </select>
       </div>
-
-
+      <div>
+        <label for="">Цена</label>
+        <input type="number" name="min price" placeholder="Цена от" min="1">
+        <input id="" type="number" name="max price" placeholder="Цена до" max="50000">
+      </div>
+      <div>
+        <label for="year">Год випуска</label>
+        <input id="year" type="number" name="min year" placeholder="Год от" min="1998" max="2022">
+        <input id="" type="number" name="max year" placeholder="Год до" min="1998" max="2022">
+      </div>
+      <div>
+        <label for="">Состояние</label>
+        <select name="condition" id="list" required multiple>
+          <option selected disabled>Выберите состояние</option>
+          <option>Битая</option>
+          <option>Гаражное хранение</option>
+          <option>Ремонт</option>
+          <option>Кредит</option>
+          <option>Лизинг</option>
+          <option>Нерастаможенная</option>
+        </select>
+      </div>
     </fieldset>
 
 
