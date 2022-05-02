@@ -10,14 +10,21 @@
 
 <body>
 
+  <div>
+    <div><a href="index.html">Главная</a></div>
+    <div><a href="regist.html">Регистрация</a></div>
+    <div><a href="autoriz.html">Авторизация</a></div>
+    <div><a href="">Подбор</a></div>
+  </div>
+
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
 
     <fieldset>
       <legend>Поиск по параметрам</legend>
 
       <div>
-        <label for="">Тип кузова</label>
-        <select name="type" id="list" required>
+        <label for="kuzov">Тип кузова</label>
+        <select id="kuzov" name="kuzov" required>
           <option selected disabled value="">Выберите тип</option>
           <option>Седан</option>
           <option>Универсал</option>
@@ -27,9 +34,9 @@
       </div>
 
       <div>
-        <label for="">Марка авто</label>
-        <select name="brand" id="list" required>
-          <option selected disabled>Выберите марку</option>
+        <label for="brand">Марка авто</label>
+        <select id="brand" name="brand" required>
+          <option selected disabled value="">Выберите марку</option>
           <option>Audi</option>
           <option>BMW</option>
           <option>Citroen</option>
@@ -40,9 +47,9 @@
       </div>
 
       <div>
-        <label for="">Страна производитель</label>
-        <select name="country" id="list" required>
-          <option selected disabled>Выберите страну</option>
+        <label for="country">Страна производитель</label>
+        <select name="country" id="country" required>
+          <option selected disabled value="">Выберите страну</option>
           <option>Германия</option>
           <option>Франция</option>
           <option>Япония</option>
@@ -54,20 +61,20 @@
       </div>
 
       <div>
-        <label for="">Цена</label>
-        <input type="number" name="min price" placeholder="Цена от" min="1" max="50000">
-        <input id="" type="number" name="max price" placeholder="Цена до" min="1" max="50000">
+        <label for="price">Цена</label>
+        <input id="price" type="number" name="min price" placeholder="Цена от" min="1" max="50000">
+        <input type="number" name="max price" placeholder="Цена до" min="1" max="50000">
       </div>
       <div>
         <label for="year">Год випуска</label>
         <input id="year" type="number" name="min year" placeholder="Год от" min="1998" max="2022">
-        <input id="" type="number" name="max year" placeholder="Год до" min="1998" max="2022">
+        <input type="number" name="max year" placeholder="Год до" min="1998" max="2022">
       </div>
 
       <div>
-        <label for="">Состояние</label>
-        <select name="condition" id="list" required>
-          <option selected disabled>Выберите состояние</option>
+        <label for="condition">Состояние</label>
+        <select id="condition" name="condition" required>
+          <option selected disabled value="">Выберите состояние</option>
           <option>Битая</option>
           <option>Гаражное хранение</option>
           <option>Ремонт</option>
@@ -78,9 +85,9 @@
       </div>
 
       <div>
-        <label for="">Тип топлива</label>
-        <select name="fuel" id="list" required>
-          <option selected disabled>Выберите тип</option>
+        <label for="fuel">Тип топлива</label>
+        <select name="fuel" id="fuel" required>
+          <option selected disabled value="">Выберите тип</option>
           <option>Дизель</option>
           <option>Бензин</option>
           <option>Газ</option>
@@ -88,9 +95,9 @@
       </div>
 
       <div>
-        <label for="">Трансмиссия</label>
-        <select name="transm" id="list" required>
-          <option selected disabled>Выберите тип</option>
+        <label for="transm">Трансмиссия</label>
+        <select name="transm" id="transm" required>
+          <option selected disabled value="">Выберите тип</option>
           <option>Робот</option>
           <option>Механика</option>
           <option>Автомат</option>
@@ -98,9 +105,9 @@
       </div>
 
       <div>
-        <label for="">Цвет</label>
-        <select name="color" id="list" required multiple>
-          <option selected disabled>Выберите цвет</option>
+        <label for="color">Цвет</label>
+        <select name="color" id="color" required multiple>
+          <option selected disabled value="">Выберите цвет</option>
           <option>Белый</option>
           <option>Черный</option>
           <option>Синий</option>
@@ -111,8 +118,8 @@
       </div>
 
       <div>
-        <label for="">Комфорт</label>
-        <select name="comfort" id="list" required multiple>
+        <label for="comfort">Комфорт</label>
+        <select name="comfort" id="comfort" required multiple>
           <option selected disabled>Выберите опции</option>
           <option>Климатконтроль</option>
           <option>Кондиционер</option>
@@ -122,14 +129,12 @@
           <option>Понорамная крыша</option>
         </select>
       </div>
-
     </fieldset>
 
     <fieldset>
       <legend>Поиск по параметрам</legend>
       <button type="submit">Подобрать</button>
       <button type="reset">Сбросить</button>
-
     </fieldset>
 
   </form>
