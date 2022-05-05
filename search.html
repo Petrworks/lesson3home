@@ -62,13 +62,13 @@
 
       <div>
         <label for="price">Цена</label>
-        <input id="price" type="number" name="min price" placeholder="Цена от" min="1" max="50000">
-        <input type="number" name="max price" placeholder="Цена до" min="1" max="50000">
+        <input id="price" name="minprice" type="number" placeholder="Цена от" min="1" max="50000">
+        <input type="number" name="maxprice" placeholder="Цена до" min="1" max="50000">
       </div>
       <div>
         <label for="year">Год випуска</label>
-        <input id="year" type="number" name="min year" placeholder="Год от" min="1998" max="2022">
-        <input type="number" name="max year" placeholder="Год до" min="1998" max="2022">
+        <input id="year" name="minyear" type="number" placeholder="Год от" min="1998" max="2022">
+        <input type="number" name="maxyear" placeholder="Год до" min="1998" max="2022">
       </div>
 
       <div>
@@ -86,7 +86,7 @@
 
       <div>
         <label for="fuel">Тип топлива</label>
-        <select name="fuel" id="fuel" required>
+        <select id="fuel" name="fuel" required>
           <option selected disabled value="">Выберите тип</option>
           <option>Дизель</option>
           <option>Бензин</option>
@@ -96,7 +96,7 @@
 
       <div>
         <label for="transm">Трансмиссия</label>
-        <select name="transm" id="transm" required>
+        <select id="transm" name="transm" required>
           <option selected disabled value="">Выберите тип</option>
           <option>Робот</option>
           <option>Механика</option>
@@ -106,7 +106,7 @@
 
       <div>
         <label for="color">Цвет</label>
-        <select name="color" id="color" required multiple>
+        <select id="color" name="color" required multiple>
           <option selected disabled value="">Выберите цвет</option>
           <option>Белый</option>
           <option>Черный</option>
@@ -119,7 +119,7 @@
 
       <div>
         <label for="comfort">Комфорт</label>
-        <select name="comfort" id="comfort" required multiple>
+        <select id="comfort" name="comfort" required multiple>
           <option selected disabled>Выберите опции</option>
           <option>Климатконтроль</option>
           <option>Кондиционер</option>
